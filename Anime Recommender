@@ -1,0 +1,122 @@
+print('Welcome to the anime match tool.')
+import random
+strings = ['Fullmetal Alchemist', 'Daily Life of High School Boys', 'Dororo', 'Inuyasha', 'Saiyuki', 'Free!!', 'Cardcaptor Sakura', 'Yu Yu Hakusho', 'Lovely Complex', 'Jujutsu Kaisen', 'Lucky Star']
+random_str = random.choice(strings)
+random = input('Want to choose a random show, no matter how you feel right now? Y or N?')
+if 'N' in random:
+    print('Then continue on to get an anime recommendation based on your current mood.')
+else:
+    print(random_str)
+    print('Thanks for using Animental Recommender!')
+    exit(0)
+feeling = input('How are you feeling right now? Sad, mad, bad, good or meh?')
+if 'sad' in feeling:
+    print('I hate to hear that. Lets find an anime to help with that feeling.')
+    feeling_2 = input('Do you want to watch something with less than 25 episodes or more than 25 episodes?')
+    if 'less than 25 episodes' in feeling_2:
+        print('Got it.')
+        feeling_3 = input('Do you want to watch something sad? Y or N?')
+        if 'Y' in feeling_3:
+            print('Then you should watch Japan Sinks 2020.')
+        else:
+            print('Okay. Then watch Dangers To My Heart for something wholesome and heart-warming.')
+    else:
+        print('Got it.')
+        feeling_4 = input('Do you want to watch something sad? Y or N?')
+        if 'Y' in feeling_4:
+            print('Then watch To Your Eternity.')
+        else:
+            print('Then watch Love Is War.')
+if 'mad' in feeling:
+    print('I hate to hear that. Lets see what I can do to help that.')
+    feeling_5 = input('Do you want to watch something with less than 25 episodes or more than 25 episodes?')
+    if 'less than 25 episodes' in feeling_5:
+        print('Gotcha.')
+        feeling_6 = input('Do you want to watch something with a bit of healthy anger? Y or N?')
+        if 'Y' in feeling_6:
+            print('Then you should watch My Hero Academia. Deku and his classmates do a great job learning to express his anger in healthy ways. Remember: anger is healthy as long as it is not hurting others.')
+        else:
+            print('Okay. Then watch Grand Blue for something light.')
+    else:
+        print('Got it.')
+        feeling_7 = input('Do you want to watch something with a bit of healthy anger? Y or N?')
+        if 'Y' in feeling_7:
+            print('Then watch Demon Slayer. Tanjiro has a lot of trajedies in his life and learns to shape his anger for his circumstances into something healthy to use to protect his loved ones. Disclaimer: Do not go hurting people though!')
+        else:
+            print('Then watch Gintama. Old but good and will make you laugh - hopefully.')
+if 'bad' in feeling:
+    print('I hate to hear that. Lets find an anime to help with that feeling.')
+    feeling_8 = input('Do you want to watch something with less than 25 episodes or more than 25 episodes?')
+    if 'less than 25 episodes' in feeling_8:
+        print('Got it.')
+        feeling_9 = input('Do you want to watch something that could make you laugh? Y or N?')
+        if 'Y' in feeling_9:
+            print('Then you should watch Lovely Complex.')
+        else:
+            print('Okay. Then watch The Promised Neverland. Tread carefully: this one is both cute and tragic.')
+    else:
+        print('No problem.')
+        feeling_10 = input('Do you want to watch something that could make you laugh? Y or N?')
+        if 'Y' in feeling_10:
+            print('Then watch Lucky Star.')
+        else:
+            print('Then watch Darling in the Franxx. But if it is love that is making you feel bad, try The Get Backers. Less love, more action.')
+if 'good' in feeling:
+    print('Love to hear it!')
+    feeling_11 = input('Do you want to watch something with less than 25 episodes or more than 25 episodes?')
+    if 'less than 25 episodes' in feeling_11:
+        print('Great!')
+        feeling_12 = input('Do you want to watch something to make you smile? Y or N?')
+        if 'Y' in feeling_12:
+            print('Then you should watch Yamada-kun and the Seven Witches.')
+        else:
+            print('So you want something more dramatic. Then watch Your Lie In April.')
+    else:
+        print('Got it.')
+        feeling_13 = input('Do you want to watch something to keep up that smile? Y or N?')
+        if 'Y' in feeling_13:
+            print('Then watch Haikyuu!!.')
+        else:
+            print('Then watch something more dramatic: Dr. Stone.')   
+if 'meh' in feeling:
+    print('Sometimes it is hard to put a word to a feeling. No worries.')
+    feeling_14 = input('Do you want to watch something with less than 25 episodes or more than 25 episodes?')
+    if 'less than 25 episodes' in feeling_14:
+        print('Got it.')
+        feeling_15 = input('Do you want to watch something filled with romance? Y or N?')
+        if 'Y' in feeling_15:
+            print('Then you should watch My Dress Up Darling.')
+        else:
+            extra = input('Then what about a sports show? Y or N?')
+            if 'Y' in extra:
+                print('Then watch Yuri on Ice.')
+            else: 
+                extra_2 = input('How about something with action and adventure? Y or N?')
+                if 'Y' in extra_2:
+                    print('Easy. Watch Is It Wrong To Pick Up Girls In A Dungeon.')
+                else:
+                    extra_3 = input('Okay, okay. How about something just plain weird? Y or N?')
+                    if 'Y' in extra_3:
+                        print('Watch Fooly Cooly.')
+                    else:
+                        print('Okay, then watch a fan favorite: Daily Life of High School Boys.')
+    else:
+        print('Coming right up!')
+        feeling_16 = input('Do you want to watch something filled with romance? Y or N?')
+        if 'Y' in feeling_16:
+            print('Then watch Sword Art Online.')
+        else:
+            extra_4 = input('Then what about a sports show? Y or N?')
+            if 'Y' in extra_4:
+                print('Then watch Haikyuu!!.')
+            else: 
+                extra_5 = input('How about something with action and adventure? Y or N?')
+                if 'Y' in extra_5:
+                    print('Easy. Watch Bleach.')
+                else:
+                    extra_6 = input('Okay, okay. How about something just plain weird? Y or N?')
+                    if 'Y' in extra_6:
+                        print('Watch Popee the Performer.')
+                    else:
+                        print('Okay, then watch a fan favorite: Hunter X Hunter.')
+print('Thanks for using the Animental Recommender!')
